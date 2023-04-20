@@ -1,0 +1,37 @@
+{
+  "logFormatVersion": 1,
+  "jobId": "3f4774d7-be8c-45d3-8f40-d07e9bf9bec6",
+  "status": "Invalid",
+  "statusSummary": "Archive contains critical validation errors",
+  "statusCode": 4000,
+  "archiveFilename": "Chemistream-0.80.0-MacOSX-x86_64.pkg",
+  "uploadDate": "2022-12-21T20:41:41.825Z",
+  "sha256": "6dd8e0ebaef952d72a2ee0b40f90f1b8baae2a4a0526c55ca7c7830048f7184b",
+  "ticketContents": null,
+  "issues": [
+    {
+      "severity": "error",
+      "code": null,
+      "path": "Chemistream-0.80.0-MacOSX-x86_64.pkg/prepare_installation.pkg Contents/Payload/chemistream/conda.exe",
+      "message": "The binary is not signed with a valid Developer ID certificate.",
+      "docUrl": "https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087721",
+      "architecture": "x86_64"
+    },
+    {
+      "severity": "error",
+      "code": null,
+      "path": "Chemistream-0.80.0-MacOSX-x86_64.pkg/prepare_installation.pkg Contents/Payload/chemistream/conda.exe",
+      "message": "The signature does not include a secure timestamp.",
+      "docUrl": "https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087733",
+      "architecture": "x86_64"
+    },
+    {
+      "severity": "error",
+      "code": null,
+      "path": "Chemistream-0.80.0-MacOSX-x86_64.pkg/prepare_installation.pkg Contents/Payload/chemistream/conda.exe",
+      "message": "The executable does not have the hardened runtime enabled.",
+      "docUrl": "https://developer.apple.com/documentation/security/notarizing_macos_software_before_distribution/resolving_common_notarization_issues#3087724",
+      "architecture": "x86_64"
+    }
+  ]
+}
